@@ -1,0 +1,63 @@
+.window{
+	background-color:rgba(255,255,255,1);
+	border:1px solid rgba(0,0,0,0.6);
+	box-shadow:5px 5px 10px rgba(0,0,0,0.3);
+	min-width:30vmin;
+	position:fixed;
+	overflow:hidden;
+	z-index:900;
+}
+.window .title{
+	background:url('images/DefaultIcon.png') center left 1vmin no-repeat;
+	background-size:1.5vmin;
+	background-color:rgba(255,255,255,0.8);
+	font-size:1.3vmin;
+	color:rgba(0,0,0,0.8);
+	height:4vmin;
+	cursor:default;
+}
+.window .title .text{
+	font-size:1.3vmin;
+	margin-left:3.5vmin;
+	margin-top:1vmin;
+	float:left;
+}
+.window .title .buttons-actions{
+	padding:1vmin;
+	float:right;
+}
+.window .title .buttons-actions div{
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:2vmin;
+	height:2vmin;
+	margin-right:0.3vmin;
+	float:left;
+	cursor:default;
+}
+.window .title .buttons-actions .minimize{
+	background-image:url('images/minimize.png');
+}
+.window .title .buttons-actions .maximize{
+	background-image:url('images/maximize.png');
+}
+.window .title .buttons-actions .close{
+	background-image:url('images/close.png');
+}
+.window .container{
+	background-color:rgba(255,255,255,1);
+	border:1px solid rgba(0,0,0,0.2);
+	height:100%;
+}
+.window .container p{
+	font-size:1.4vmin;
+	color:rgba(0,0,0,0.8);
+	margin:1vmin;
+}
+.window .container .loading{
+	background:url('images/loading.gif') center center no-repeat;
+	background-size:10vmin 10vmin;
+	width:100%;
+	height:100%;
+}
