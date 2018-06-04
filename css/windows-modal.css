@@ -1,0 +1,96 @@
+.overlay{
+	background-color:rgba(0,0,0,0.8);
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+.window{
+	background-color:rgba(255,255,255,1);
+	border:1px solid rgba(0,0,0,0.6);
+	box-shadow:5px 5px 10px rgba(0,0,0,0.3);
+	min-width:0vmin;
+	min-height:0px;
+	position:fixed;
+	overflow:hidden;
+	z-index:1000;
+	display:none;
+}
+.window .title{
+	background-position:center left 1vmin;
+	background-repeat:no-repeat;
+	background-size:1.5vmin;
+	background-color:rgba(255,255,255,0.8);
+	overflow:hidden;
+	cursor:default;
+}
+.window .title .text{
+	color:rgba(0,0,0,0.8);
+	font-weight:bold;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+	font-size:1.3vmin;
+	line-height:4vmin;
+	margin-left:3.5vmin;
+	float:left;
+}
+.window .title .buttons{
+	padding:1vmin;
+	float:right;
+}
+.window .title .buttons div{
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:2vmin;
+	height:2vmin;
+	margin-right:0.3vmin;
+	float:left;
+	cursor:default;
+}
+.window .title .buttons .minimize{
+	background-image:url('images/minimize.png');
+}
+.window .title .buttons .maximize{
+	background-image:url('images/maximize.png');
+}
+.window .title .buttons .close{
+	background-image:url('images/close.png');
+	transition:150ms;
+}
+.window .title .buttons .close:hover{
+	box-shadow:0px 0px 5px rgba(255,0,0,1);
+}
+.window .container{
+	background-color:rgba(255,255,255,1);
+	outline:1px solid rgba(0,0,0,0.2);
+	font-size:1.3vmin;
+	color:rgba(0,0,0,0.8);
+	padding:1vmin;
+	min-height:0vmin;
+	min-width:0vmin;
+	overflow:auto;
+}
+.window .container p, .window .container span{
+	font-size:1.3vmin;
+	color:rgba(0,0,0,0.8);
+	padding:1vmin;
+}
+.window .container .button{
+	background-color:rgba(0,123,255,0.9);
+	border:1px solid rgba(0,0,0,0.5);
+	box-shadow:0px 0px 2px rgba(0,0,0,1);
+	text-align:center;
+	font-size:1.5vmin;
+	color:rgba(255,255,255,1);
+	width:30%;
+	margin:1vmin auto;
+	padding:1.5vmin;
+	cursor:default;
+	transition:250ms;
+}
+.window .container .button:hover{
+	background-color:rgba(0,123,255,1);
+	box-shadow:0px 0px 2px rgba(0,0,0,1), 0px 0px 2px rgba(0,0,0,1);
+}
